@@ -1,0 +1,69 @@
+/*top*/
+.indexTop {
+  display: flex;
+  align-items: center;
+}
+
+.indexTop h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 50px;
+}
+.shoppingcartPIC {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.schnapsLOGO {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: #b5981a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#menuTop {
+  display: none;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 180px;
+  margin-top: 5px;
+}
+
+#menuTop a {
+  display: block;
+  margin-top: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+/* Einleitung Schnapsbrennerei und kurze Beschriebung*/
+
+.indexEinleitungSchnapsbrennerei {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+
+}
+.schnapsbrennereiPIC {
+  height: 400px;
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 0  20px;
+}
