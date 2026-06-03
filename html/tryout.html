@@ -1,0 +1,104 @@
+        1 <!DOCTYPE html>
+        2 <html lang="en">
+        3 <head>
+        4     <meta charset="UTF-8">
+        5     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        6     <title>Image Cycler</title>
+        7     <style>
+        8         body {
+        9             font-family: Arial, sans-serif;
+       10             display: flex;
+       11             flex-direction: column;
+       12             align-items: center;
+       13             justify-content: center;
+       14             min-height: 100vh;
+       15             margin: 0;
+       16             background-color: #f5f5f5;
+       17         }
+       18         .image-container {
+       19             margin: 20px 0;
+       20             text-align: center;
+       21         }
+       22         img {
+       23             max-width: 80%;
+       24             height: auto;
+       25             border-radius: 8px;
+       26             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+       27         }
+       28         .button-group {
+       29             display: flex;
+       30             gap: 15px;
+       31         }
+       32         button {
+       33             padding: 12px 24px;
+       34             font-size: 16px;
+       35             background-color: #007bff;
+       36             color: white;
+       37             border: none;
+       38             border-radius: 4px;
+       39             cursor: pointer;
+       40             transition: background-color 0.3s;
+       41         }
+       42         button:hover {
+       43             background-color: #0056b3;
+       44         }
+       45         button:active {
+       46             transform: scale(0.95);
+       47         }
+       48         .controls {
+       49             margin-top: 20px;
+       50             font-size: 14px;
+       51             color: #666;
+       52         }
+       53     </style>
+       54 </head>
+       55 <body>
+       56     <h1>Image Cycler</h1>
+       57     <div class="image-container">
+       58         <img id="displayImage" src="https://via.placeholder.com/400x300?text=Image+1" alt="Cycling Image">
+       59     </div>
+       60     <div class="button-group">
+       61         <button id="prevBtn">Previous Image</button>
+       62         <button id="nextBtn">Next Image</button>
+       63     </div>
+       64     <div class="controls">
+       65         Click buttons to cycle through images
+       66     </div>
+       67
+       68     <script>
+       69         // Array of image URLs - REPLACE THESE WITH YOUR OWN IMAGE PATHS
+       70         const images = [
+                        'https://i.pinimg.com/736x/b0/c5/2d/b0c52db369f4858126d5a673f94b22da.jpg'
+                      '  https://i.pinimg.com/1200x/c8/c9/e9/c8c9e93e59044487b36473a14273d06a.jpg'
+       76         ];
+       77
+       78         let currentIndex = 0;
+       79
+       80         // Get DOM elements
+       81         const displayImage = document.getElementById('displayImage');
+       82         const prevBtn = document.getElementById('prevBtn');
+       83         const nextBtn = document.getElementById('nextBtn');
+       84
+       85         // Function to update the displayed image
+       86         function updateImage() {
+       87             displayImage.src = images[currentIndex];
+       88             // Optional: update alt text for accessibility
+       89             displayImage.alt = `Image ${currentIndex + 1} of ${images.length}`;
+       90         }
+       91
+       92         // Event listeners for buttons
+       93         nextBtn.addEventListener('click', () => {
+       94             currentIndex = (currentIndex + 1) % images.length;
+       95             updateImage();
+       96         });
+       97
+       98         prevBtn.addEventListener('click', () => {
+       99             currentIndex = (currentIndex - 1 + images.length) % images.length;
+      100             updateImage();
+      101         });
+      102
+      103         // Initialize with first image
+      104         updateImage();
+      105     </script>
+      106 </body>
+      107 </html>
