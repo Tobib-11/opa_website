@@ -1,7 +1,8 @@
 /*overall */
 body {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: beige;
 }
 
 /*index seite*/
@@ -16,7 +17,6 @@ body {
   align-items: center;
   position: relative;
   z-index: 1000;
-
 }
 
 .indexTop h1 {
@@ -38,97 +38,95 @@ body {
   margin-right: 10px;
 }
 
-button {
-  width: 50px;
-  height: 50px;
-  background: #b5981a;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 22px;
-}
-
-#menuTop {
-  display: none;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 180px;
-  margin-top: 5px;
-  position: absolute;
-  top: 60px;
-  left: 0px;
-  z-index: 9999;
-}
-
+/*menu top*/
 #menuTop a {
-  display: block;
-  margin-top: 15px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
   color: black;
+  text-decoration: none;
 }
 
 /*index Schnaps Vorstellungoben*/
+
+.indexSchnapsVorstellungh1 {
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .indexSchnapsVorstellungen {
   display: flex;
   align-items: center;
+
   justify-content: center;
   gap: 40px;
 }
 
 .indexSchnapsVorstellungen img {
-  width: 320px;
-  height: 320px;
+  width: auto;
+  height: auto;
   border-radius: 20px;
 }
 
 .indexSchnapsVorstellungen button {
-  width: 40px;
-  height: 40px;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: burlywood;
+  font-size: 30px;
+}
+
+.indexSchnapsVorstellungp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Einleitung Schnapsbrennerei und kurze Beschriebung*/
 .indexEinleitungSchnapsbrennerei {
-  display: flex;
+  width: 700px;
+  height: 300px;
+  background-color: white;
   border-radius: 20px;
-}
-.indexEinleitungSchnapsbrennerei p {
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
+  display: flex;
+  gap: 30px;
 }
 .schnapsbrennereiPIC {
-  height: 600px;
-  width: 700px;
-  border: solid 4px;
   border-radius: 20px;
 }
-.indexEinleitungSchnapsbrennereiPictureAndP {
-  flex-direction: column;
+.indexEinleitungSchnapsbrennereiOverall{
+  display: flex;
+  gap: 50px;
 }
-.indexEinleitungSchnapsbrennereiPictureAndP p {
-  padding: 0%;
-  float: right;
+.indexEinleitungSchnapsbrennereiPictureAndP{
+  flex-direction: column ;
+}
+/* Einleitung 1 Schnapsbrennerei und kurze Beschriebung*/
+
+/*bottom */
+.bottom {
+  background-color: darkgoldenrod;
+  padding: 67px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  gap: 90px;
+  font-size: 20px;
 }
 
-/* Einleitung 1 Schnapsbrennerei und kurze Beschriebung*/
-.index1EinleitungSchnapsbrennerei {
-  display: flex;
-  border-radius: 20px;
+.bottomKontakt {
+  font-size: 23px;
 }
-.index1EinleitungSchnapsbrennerei p {
-  padding: 50px 50px 50px 50px;
+/*
+.bottomFind {
 }
-.schnapsbrennerei1PIC {
-  height: 600px;
-  width: 700px;
-  border: solid 4px;
-  border-radius: 20px;
+
+.bottomAllSites {
 }
-.index1EinleitungSchnapsbrennereiPictureAndP {
-  flex-direction: column;
+
+.bottomWeiteres {
 }
-.index1EinleitungSchnapsbrennereiPictureAndP p {
-  padding: 0%;
-  float: left;
-}
+*/
