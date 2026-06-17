@@ -96,25 +96,26 @@ body {
 .schnapsbrennereiPIC {
   border-radius: 20px;
 }
-.indexEinleitungSchnapsbrennereiOverall{
+.indexEinleitungSchnapsbrennereiOverall {
   display: flex;
   gap: 50px;
 }
-.indexEinleitungSchnapsbrennereiPictureAndP{
-  flex-direction: column ;
+.indexEinleitungSchnapsbrennereiPictureAndP {
+  flex-direction: column;
 }
 /* Einleitung 1 Schnapsbrennerei und kurze Beschriebung*/
 
 /*bottom */
 .bottom {
   background-color: darkgoldenrod;
-  padding: 67px 50px 50px 50px;
+  padding: 67px 50px 0px 0px;
   display: flex;
   justify-content: center;
   height: 300px;
-  width: 100%;
-  gap: 90px;
+  width: 95, 5%;
+  gap: 190px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .bottomKontakt {
@@ -130,3 +131,57 @@ body {
 .bottomWeiteres {
 }
 */
+
+/*liqour schnapse*/
+.liqourSchnapse {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.liqourButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 30px;
+}
+.liqourSchnapse img {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+.liqourSchnapsWapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+}
+
+/*schnaps inside*/
+.liqourSchnapsInside {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.liqourSchnapsInside img {
+  width: 700px;
+  height: 800px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.liqourSchnapsInsideBeschreibung {
+  border: 3px black solid;
+  border-radius: 20px;
+  padding: 40px;
+  width: auto;
+  height: auto;
+
+}
