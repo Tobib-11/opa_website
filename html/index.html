@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/cssForAll.css" />
   </head>
   <body>
-    <script src="/javascript/scriptForAll.js"></script>
+    <script src="../javascript/scriptForAll.js"></script>
     <div class="indexSite">
       <div class="indexTop">
         <div id="menuTop">
@@ -40,16 +40,16 @@
         Diese Schnäpse werden des öfteren gekauft
       </p>
       <div class="indexSchnapsVorstellungen">
-        <button>⇜</button>
+        <button class="prevBtn" onclick="changeImage(-1)"><--</button>
 
-        <a href="/pictures/INDEXschnapschange/shcnapsvorstellung.webp">
-          <img
-            src="/pictures/INDEXschnapschange/shcnapsvorstellung.webp"
-            alt="FirstSchnapsPic"
-          />
-        </a>
-        <button>➔</button>
+        <img
+          id="schnapsImage"
+          src="/pictures/INDEXschnapschange/schnaps1.webp"
+          alt="FirstSchnapsPic"
+        />
+        <button class="nextBtn" onclick="changeImage(1)">--></button>
       </div>
+
       <br /><br /><br />
 
       <!--index 1.Schnaps Vorstellungen-->
